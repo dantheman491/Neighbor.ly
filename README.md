@@ -37,15 +37,27 @@ Neighbor.ly MVP is to have full CRUD capability for creating and adding listings
 
 #### Wireframes
 
-|<img src ="https://user-images.githubusercontent.com/22455354/110029855-fc3a0700-7d02-11eb-8013-40bd64ae239d.jpg" width="300">
-|<img src ="https://user-images.githubusercontent.com/22455354/110029856-fcd29d80-7d02-11eb-8c3f-2cd40d823e2a.jpg" width="300">
-|<img src ="https://user-images.githubusercontent.com/22455354/110029858-fcd29d80-7d02-11eb-8281-66b6d556d207.jpg" width="300">
-<img src ="https://user-images.githubusercontent.com/22455354/110029859-fcd29d80-7d02-11eb-9901-ab962cfa0550.jpg" width="300">
-|<img src ="https://user-images.githubusercontent.com/22455354/110029860-fd6b3400-7d02-11eb-8007-5dae5a43746a.jpg" width="300">
-|<img src ="https://user-images.githubusercontent.com/22455354/110029861-fd6b3400-7d02-11eb-8db6-f8f3854f515c.jpg" width="300">
-|<img src ="https://user-images.githubusercontent.com/22455354/110029862-fd6b3400-7d02-11eb-9879-e978e919760f.jpg" width="300">
+|<img src ="https://user-images.githubusercontent.com/22455354/110147577-dae02600-7da9-11eb-94df-229a5275015a.jpg" width="300">
+|<img src ="https://user-images.githubusercontent.com/22455354/110147598-e03d7080-7da9-11eb-9fc5-b6c4701d24cf.jpg" width="300">
+|<img src ="https://user-images.githubusercontent.com/22455354/110147616-e6cbe800-7da9-11eb-87f8-8526a62af6c4.jpg" width="300">
+<img src ="https://user-images.githubusercontent.com/22455354/110147634-ec293280-7da9-11eb-90da-a5b8d415b130.jpg" width="300">
+|<img src ="https://user-images.githubusercontent.com/22455354/110147656-f0ede680-7da9-11eb-98cc-5fcd6e3cd19e.jpg" width="300">
+|<img src ="https://user-images.githubusercontent.com/22455354/110147693-f77c5e00-7da9-11eb-98a0-e26bdaaa4d52.jpg" width="300">
+|<img src ="https://user-images.githubusercontent.com/22455354/110147704-fc411200-7da9-11eb-9a72-256229905495.jpg" width="300">
 
 <br>
+
+### UI/UX Design:
+
+Typography
+Fonts:
+Roboto - A standard font in modern devices, allows for responsive screen readablity.
+Noto SansJP - A complementary font that allows the user to pay attention to the main content without taking away from headers.
+
+Colors:
+Blue - #275B99 Blue is most often associated with loyalty and trust.
+Green - #19B296 Green give the viewer a sense of quality. This is why it is used as a secondary color.
+Gray - #F9F9F9 used as a tertiary color to allow the user to draw attention to primary colors and content.
 
 ### Component Tree:
 
