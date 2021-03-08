@@ -1,4 +1,4 @@
 class Listing < ApplicationRecord
   belongs_to :user
-  # has_and_belongs_to_many :review
+  has_many :reviews
 end
