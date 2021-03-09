@@ -1,7 +1,7 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
 // import ImageSlider from "../../components/ImageSlider/ImageSlider";
-import Layout from "../../components/shared/Layout/Layout";
+import Layout from "../../components/shared/Layout/Layout.jsx";
 import "./Home.css";
 
 const Home = (props) => {
@@ -14,41 +14,40 @@ const Home = (props) => {
           <ImageSlider />
         </div> */}
       <div className="about-container">
-        <div className="about-info-container"></div>
-        <div className="about-info">
-          <h2>What makes us different?</h2>
-          <hr className="linebreak"></hr>
-          <p>
-            At Valhalla Inc., the foremost global marketplace for private island
-            sales and rentals, we sell islands because{" "}
-            <span className="highlight-light">why not</span>. Whether you are in
-            the market to purchase your dream island or ready to sell your
-            prized property, we are{" "}
-            <span className="highlight-light">100 percent </span>dedicated to
-            the world of private islands.
-          </p>
+        <div className="about-info"></div>
+        <div className="about-info-container">
+          <div className="text-block">
+            <p className="first-paragraph">
+              Life is complicated enough. A new way to connect with those around
+              you and be neighborly at the same time. Get Neighborly, and let us
+              simplify your next project
+            </p>
+          </div>
+          <div className="bkgd-box"></div>
         </div>
       </div>
       <div className="explore-container">
-        <div className="explore-info">
-          <h2>Explore islands you'll never afford</h2>
-          <hr className="linebreak"></hr>
-          <p>
-            For those who want peace and complete{" "}
-            <span className="highlight-dark">seclusion</span>, having a private
-            island is the only way to go. Frankly, if you don't own your own
-            island, you're not doing it right. A{" "}
-            <span className="highlight-dark">large slice of heaven </span>
-            for a small slice of cash.
+        <div className="explore-info"></div>
+        <div className="explore-info-container">
+          <h3 className="one-h3">Make Money</h3>
+          <p className="paragraph">
+            More uses for your unused tools, strengthen your community.
           </p>
-          <button
-            className="explore-button"
-            onClick={() => history.push("/listings")}
-          >
-            Explore
-          </button>
         </div>
-        <div className="explore-info-container"></div>
+        <div className="explore-info-container1">
+          <h3 className="one-h3">Create Revenue</h3>
+          <p className="paragraph">
+            Neighbor.ly provides an opportunity to make moeny with little
+            effort.
+          </p>
+        </div>
+        <div className="explore-info-container">
+          <h3 className="one-h3">Save Money</h3>
+          <p className="paragraph">
+            Why buy a tool you will only use a few times? Use Neighbor.ly
+            instead.
+          </p>
+        </div>
       </div>
       {/* </div> */}
     </Layout>

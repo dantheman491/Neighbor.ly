@@ -1,5 +1,5 @@
 .navbar {
-  background: #456471;
+  background: #275b99;
   height: 80px;
   width: 100%;
   display: flex;
@@ -19,9 +19,9 @@
 }
 
 .navbar-logo h1 {
-  font-family: "Julius Sans One", sans-serif;
-  font-size: 2.7rem;
-  letter-spacing: 0.1em;
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  color: #fff;
   margin: 0 2em 0 0;
 }
 

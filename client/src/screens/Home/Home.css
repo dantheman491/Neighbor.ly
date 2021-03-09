@@ -1,0 +1,218 @@
+.home-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding: 10em 0;
+  margin-left: -14em;
+}
+.about-info-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20em;
+  width: 100em;
+  min-width: 20em;
+  background-color: #19b296;
+  background-size: cover;
+}
+.bkgd-box {
+  width: 50em;
+  height: 20em;
+  background-color: #0c185f;
+
+  margin-top: 5em;
+  margin-left: 20em;
+  margin-right: 2em;
+  background-image: url(https://images.pexels.com/photos/3228684/pexels-photo-3228684.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  background-size: contain;
+}
+.first-paragraph {
+  font-size: 28px;
+  max-width: 40em;
+  color: #ffff;
+  margin-left: 5em;
+}
+.about-info {
+  margin-left: 15em;
+}
+
+/* .about-container p {
+  font-size: 1.4rem;
+  max-width: 20em;
+} */
+
+.about-info h2 {
+  margin-bottom: 1em;
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+.explore-info h2 {
+  /* margin-bottom: 1em; */
+  font-size: 2rem;
+  font-weight: 900;
+  color: white;
+}
+
+.explore-container {
+  display: flex;
+  justify-content: center;
+
+  align-items: center;
+  background-color: #f5f8f9;
+  padding: 5em 0;
+}
+
+.explore-info-container {
+  height: 30em;
+  width: 20em;
+  margin-left: 10em;
+  margin-right: 10em;
+  background-color: #19b296;
+  /* background-image: url(../assets/starfish.jpeg); */
+  background-size: cover;
+  box-shadow: 10px 10px 20px #456471;
+}
+.explore-info-container1 {
+  height: 30em;
+  width: 20em;
+  margin-left: 10em;
+  margin-right: 5em;
+  background-color: #19b296;
+  /* background-image: url(../assets/starfish.jpeg); */
+  background-size: cover;
+  box-shadow: 10px 10px 20px #456471;
+}
+.explore-info-container2 {
+  height: 30em;
+  width: 20em;
+  background-color: #19b296;
+  background-image: url(../../assets/starfish.jpeg);
+  background-size: cover;
+  box-shadow: 10px 10px 20px #456471;
+}
+.one-h3 {
+  color: white;
+  margin-top: 18em;
+}
+/* .paragraph p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 16px;
+  max-width: 12em;
+} */
+.explore-container p {
+  color: white;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 16px;
+  max-width: 15em;
+  padding-left: 2em;
+}
+
+.explore-button {
+  margin-top: 2em;
+  padding: 0.5em 0.75em;
+  font-size: 1.4rem;
+  border: 2px solid white;
+  border-radius: 4px;
+  background-color: inherit;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.explore-button:hover {
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+  color: #48b6a9;
+}
+.highlight-light {
+  font-weight: 900;
+  font-size: 1.5rem;
+  color: #d28d55;
+}
+
+.highlight-dark {
+  font-weight: 900;
+  font-size: 1.5rem;
+  color: #456471;
+}
+
+@media screen and (max-width: 1200px) {
+  .about-container {
+    flex-direction: column;
+  }
+  .explore-container {
+    flex-direction: column-reverse;
+  }
+
+  .about-info {
+    margin-top: 4em;
+    margin-left: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-info p {
+    max-width: 60vw;
+  }
+
+  .about-info h2 {
+    font-size: 1.6rem;
+  }
+
+  .about-container p {
+    font-size: 1.2rem;
+    padding: 0 0.5rem;
+  }
+
+  .explore-info {
+    margin-top: 4em;
+    margin-left: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .explore-info h2 {
+    font-size: 1.6rem;
+  }
+
+  .explore-info p {
+    margin-right: 0;
+    padding: 0 0.5rem;
+    max-width: 60vw;
+  }
+
+  .explore-container p {
+    font-size: 1.2rem;
+  }
+
+  .highlight-dark,
+  .highlight-light {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .about-info p {
+    max-width: 80vw;
+  }
+  .explore-info p {
+    max-width: 80vw;
+  }
+}

@@ -1,0 +1,10 @@
+.user-listings {
+  padding-top: 10em;
+  min-height: 100vh;
+}
+
+@media screen and (max-width: 420px) {
+  .user-listings {
+    height: 100%;
+  }
+}

@@ -1,0 +1,78 @@
+.page-container {
+  margin: 0 auto;
+  background: #ecf0f1;
+  max-width: 21.875em;
+  border-radius: 4px;
+  box-shadow: 3px 3px 10px #333;
+  padding: 15px;
+}
+
+h3 {
+  text-align: center;
+  font-weight: 200;
+  font-size: 2em;
+  margin-top: 10px;
+  margin-bottom: 1em;
+  color: #34495e;
+}
+
+.form-container1 {
+  padding-top: 20px;
+}
+
+.sign-in-input[type="text"],
+.sign-in-input[type="password"],
+.sign-in-input[type="email"],
+#sign-in-button {
+  width: 80%;
+  margin-top: 0.7rem;
+  margin-left: 10%;
+  margin-bottom: 25px;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid rgb(214, 214, 214);
+  padding-left: 0.5em;
+}
+
+:focus {
+  border: 1px solid #f4a261;
+}
+
+#sign-in-button {
+  background: #456471;
+  border: none;
+  color: white;
+  font-size: 18px;
+  font-weight: 200;
+  cursor: pointer;
+  transition: box-shadow 0.4s ease;
+}
+
+.label-sign {
+  margin-left: 2em;
+  margin-bottom: 1em;
+}
+
+.signup {
+  color: #456471;
+  margin-left: 4rem;
+}
+
+.register {
+  text-decoration: none;
+  font-size: 12px;
+}
+
+@media screen and (max-width: 600px) {
+  .page-container {
+    max-width: 100%;
+    top: 5em;
+    height: 91%;
+    box-shadow: none;
+    border-radius: 0;
+  }
+
+  label {
+    display: none;
+  }
+}

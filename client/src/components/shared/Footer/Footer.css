@@ -1,0 +1,121 @@
+.footer {
+  background: #275b99;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0px;
+}
+
+.footer-h1 {
+  float: left;
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+}
+
+.footer-text {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 15px;
+  padding: 1em;
+}
+.footer-h4 {
+  display: block;
+
+  /* justify-content: space-between; */
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 0.1em;
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 500;
+}
+
+.footer-a {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 1em;
+}
+
+.footer-img {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+@media screen and (max-width: 1000px) {
+  .footer-h1 {
+    font-size: 1.9em;
+    margin-left: 18px;
+  }
+  .footer-h4,
+  .footer-a {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 860px) {
+  .footer-h1 {
+    font-size: 1.7em;
+    margin-left: 18px;
+  }
+  .footer-h4,
+  .footer-a {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 614px) {
+  .footer-h1 {
+    font-size: 1.3em;
+    margin-left: 18px;
+  }
+  .footer-h4,
+  .footer-a {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .footer,
+  .footer-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+  }
+  .footer-h1 {
+    margin-top: 10px;
+    font-size: 1.5em;
+  }
+  .footer-h4 {
+    font-size: 1.1em;
+    padding: 0;
+  }
+
+  .fa-github {
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    align-items: center;
+  }
+  .footer-a {
+    display: flex;
+    align-items: center;
+    font-size: 0.9em;
+    margin-bottom: -20px;
+    text-align: left;
+  }
+}

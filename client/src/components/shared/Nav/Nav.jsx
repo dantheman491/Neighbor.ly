@@ -37,7 +37,7 @@ const Nav = ({ user }) => {
     <>
       <nav className="navbar">
         <NavLink to="/" className="navbar-logo">
-          <h1>Valhalla</h1>
+          <h1>Neighbor.ly</h1>
         </NavLink>
 
         <div className="menu-icon" onClick={handleIsClicked}>
