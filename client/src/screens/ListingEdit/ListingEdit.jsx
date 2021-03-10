@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Layout from "../../components/shared/Layout/Layout";
 import "./ListingEdit.css";
-import { useParams, Redirect } from "react-router-dom";
+import { useParams, Redirect, useHistory } from "react-router-dom";
 import { getAllListings, updateListing } from "../../services/listings";
 
 const ListingEdit = (props) => {
@@ -22,6 +22,7 @@ const ListingEdit = (props) => {
   const [isUpdated, setUpdated] = useState(false);
   let { id } = useParams();
   const { item_title, img_url, price, description } = formData;
+  const history = useHistory();
 
   useEffect(() => {
     const fetchListing = async () => {
@@ -48,21 +49,30 @@ const ListingEdit = (props) => {
 
   const handleChange = (event) => {
     const { name, value } = event.target;
-    setListing({
+    setFormData({
       ...listing,
       [name]: value,
     });
   };
-
-  const handleSubmit = async (event) => {
-    event.preventDefault();
-    const updated = await updateListing(id, listing);
-    setUpdated(updated);
+  const handleUpdate = async (id, formData) => {
+    const updatedListing = await updateListing(id, formData);
+    setListing((prevState) =>
+      prevState.map((listing) => {
+        return listing.id === Number(id) ? updatedListing : listing;
+      })
+    );
+    history.push(`/listing/${id}`);
   };
 
-  if (isUpdated) {
-    return <Redirect to={`/listing/${id}`} />;
-  }
+  // const handleSubmit = async (event) => {
+  //   event.preventDefault();
+  //   const updated = await updateListing(id, listing);
+  //   setUpdated({ ...updated, id });
+  // };
+
+  // if (isUpdated) {
+  //   return <Redirect to={`/listing/${id}`} />;
+  // }
 
   return (
     <Layout user={props.user}>
@@ -74,7 +84,13 @@ const ListingEdit = (props) => {
             alt={item_title}
           />
         </div>
-        <form className="edit-form" onSubmit={handleSubmit}>
+        <form
+          className="edit-form"
+          onSubmit={(e) => {
+            e.preventDefault();
+            handleUpdate(id, formData);
+          }}
+        >
           <input
             className="input-name"
             placeholder="Name"
