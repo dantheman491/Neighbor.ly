@@ -3,6 +3,7 @@ import "./UserListings.css";
 import Layout from "../../components/shared/Layout/Layout";
 import { verifyUser } from "../../services/users";
 import ListingCard from "../../components/ListingCard/ListingCard";
+import { getAllListings } from "../../services/listings";
 
 const UserListings = ({ user }) => {
   const [allListings, setAllListings] = useState([]);
@@ -13,8 +14,16 @@ const UserListings = ({ user }) => {
       setAllListings(currentUser.listings);
     };
     user && fetchUser();
-  }, [user]);
+  }, []);
 
+  useEffect(() => {
+    const fetchListings = async () => {
+      const listings = await getAllListings();
+      setAllListings(listings);
+      // setQueriedListings(listings);
+    };
+    fetchListings();
+  }, []);
   // const listingsJSX = listings.map((listing, index) => (
   //   <ListingCard
   //     id={listing.id}

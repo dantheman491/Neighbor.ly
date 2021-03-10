@@ -13,7 +13,14 @@ export const signUp = async (signUp) => {
   api.defaults.headers.common.authorization = `Bearer ${resp.data.token}`;
   return resp.data.user;
 };
-
+export const signOut = async (user) => {
+  try {
+    localStorage.clear();
+    return true;
+  } catch (error) {
+    throw error;
+  }
+};
 export const verifyUser = async () => {
   const token = localStorage.getItem("authToken");
   if (token) {
@@ -23,7 +30,23 @@ export const verifyUser = async () => {
   }
   return null;
 };
+export const getUsers = async () => {
+  try {
+    const response = await api.get("users/");
+    return response.data;
+  } catch (error) {
+    throw error;
+  }
+};
 
+export const getUser = async (id) => {
+  try {
+    const response = await api.get(`users/${id}`);
+    return response.data;
+  } catch (error) {
+    throw error;
+  }
+};
 export const removeToken = () => {
   api.defaults.headers.common.authorization = null;
 };

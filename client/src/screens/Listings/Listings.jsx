@@ -7,8 +7,8 @@ import ListingCard from "../../components/ListingCard/ListingCard";
 
 const Listings = (props) => {
   const [allListings, setAllListings] = useState([]);
-  const [queriedListings, setQueriedListings] = useState([]);
-  const [sortType, setSortType] = useState([]);
+  // const [queriedListings, setQueriedListings] = useState([]);
+  // const [sortType, setSortType] = useState([]);
 
   useEffect(() => {
     const fetchListings = async () => {

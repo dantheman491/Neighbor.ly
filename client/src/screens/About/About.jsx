@@ -8,26 +8,23 @@ function About(props) {
       <div className="about-us-container">
         <div className="paragraph-about">
           <h1 className="about-h1">About Us</h1>
-          <p>
-            Representing the largest majority of islands available for sale,
-            Valhalla Inc. is the only international real estate web site
-            dedicated exclusively to island properties. Established in 2021,
-            this fully searchable and interactive site unites and categorizes
-            the otherwise fragmented and disparate island marketplace. With over
-            4 million annual site visitors and 70,000 subscribers, Valhalla is
-            the center of the island world. Valhalla works with representatives
-            who are closest to the island - be it the owner or agent - ensuring
-            that you are always dealing with the most experienced and
-            knowledgeable parties. The relationships we have established with
-            regional island experts is your gateway to accessing currently
-            unadvertised properties and ensures that you are receiving the most
-            up-to-date island information.
+          <p className="blurb">
+            Established in 2021, this fully searchable and interactive site
+            unites and categorizes the otherwise unused tools in your garage.
+            With over 4 million annual site visitors and 70,000 subscribers,
+            Neighbor.ly is setting a new precedent. Neighbor.ly works with
+            representatives who are closest to the neighborhood - be it the
+            owner or local store - ensuring that you are always dealing with the
+            most experienced and knowledgeable parties. Neighbor.ly is more than
+            a commerce site, it's lending a helping hand with those closest to
+            you, to establish a stonger sense of community, and most importantly
+            a stronger sense of trust.
           </p>
         </div>
         <div className="about-image">
           <img
             className="about-rich"
-            src="https://i.pinimg.com/originals/7e/c2/6b/7ec26b79c2c51dccf502b560c8a808ad.jpg"
+            src="https://images.pexels.com/photos/5543176/pexels-photo-5543176.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
           />
         </div>
       </div>

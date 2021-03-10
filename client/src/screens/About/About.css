@@ -13,6 +13,7 @@
 .about-image {
   width: 50%;
   min-width: 25%;
+  margin-right: 8em;
 }
 
 .paragraph {
@@ -20,12 +21,14 @@
   flex-direction: column;
   justify-content: space-between;
   max-width: 60ch;
-  margin-right: 4em;
+  margin-right: 6em;
 }
 
-p {
+.blurb {
   font-size: 22px;
   line-height: 1.6;
+  margin-left: 8em;
+  margin-right: 8em;
 }
 
 .about-rich {

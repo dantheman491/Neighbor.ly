@@ -6,11 +6,10 @@ import { Redirect } from "react-router-dom";
 
 const ListingCreate = (props) => {
   const [listing, setListing] = useState({
-    name: "",
-    imgURL: "",
+    item_title: "",
+    img_url: "",
     description: "",
-    price: "",
-    userId: props.user.id,
+    price: 0,
   });
 
   const [isCreated, setCreated] = useState(false);
@@ -26,14 +25,14 @@ const ListingCreate = (props) => {
   const handleSubmit = async (event) => {
     event.preventDefault();
     const created = await createListing(listing);
-    setCreated({ created });
+    setCreated({ ...created, user_id: props.user.id });
   };
 
   if (isCreated) {
     return <Redirect to={`/listings`} />;
   }
 
-  const { name, price, description, imgURL } = listing;
+  const { item_title, price, description, img_url } = listing;
   return (
     <Layout user={props.user}>
       <div className="background">
@@ -45,8 +44,8 @@ const ListingCreate = (props) => {
               className="create-input"
               required
               type="text"
-              name="name"
-              value={name}
+              name="item_title"
+              value={item_title}
               placeholder="Enter Name of Tool"
               onChange={handleChange}
               autoFocus
@@ -77,8 +76,8 @@ const ListingCreate = (props) => {
             <input
               className="create-input"
               required
-              name="imgURL"
-              value={imgURL}
+              name="img_url"
+              value={img_url}
               type="text"
               placeholder="Image URL"
               onChange={handleChange}
