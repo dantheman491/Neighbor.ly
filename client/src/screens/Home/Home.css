@@ -64,7 +64,6 @@
 .explore-container {
   display: flex;
   justify-content: center;
-
   align-items: center;
   background-color: #f5f8f9;
   padding: 5em 0;
@@ -75,32 +74,29 @@
   width: 20em;
   margin-left: 10em;
   margin-right: 10em;
-  background-color: #19b296;
-  /* background-image: url(../assets/starfish.jpeg); */
-  background-size: cover;
-  box-shadow: 10px 10px 20px #456471;
+  border: 2px solid gray;
+  border-radius: 4px;
 }
 .explore-info-container1 {
   height: 30em;
   width: 20em;
   margin-left: 10em;
   margin-right: 5em;
-  background-color: #19b296;
-  /* background-image: url(../assets/starfish.jpeg); */
+  border: 2px solid gray;
+  border-radius: 4px;
   background-size: cover;
-  box-shadow: 10px 10px 20px #456471;
 }
-.explore-info-container2 {
+/* .explore-info-container2 {
   height: 30em;
   width: 20em;
-  background-color: #19b296;
-  background-image: url(../../assets/starfish.jpeg);
+  border: 2px solid gray;
+  border-radius: 4px;
+  background-image: url(../../assets/tools.png);
   background-size: cover;
-  box-shadow: 10px 10px 20px #456471;
-}
+} */
 .one-h3 {
-  color: white;
-  margin-top: 18em;
+  color: #112e51;
+  margin-top: 1em;
 }
 /* .paragraph p {
   display: flex;
@@ -111,14 +107,14 @@
   max-width: 12em;
 } */
 .explore-container p {
-  color: white;
+  color: black;
   font-family: "Noto Sans JP", sans-serif;
   font-size: 16px;
   max-width: 15em;
   padding-left: 2em;
 }
 
-.explore-button {
+/* .explore-button {
   margin-top: 2em;
   padding: 0.5em 0.75em;
   font-size: 1.4rem;
@@ -128,7 +124,7 @@
   color: white;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
-}
+} */
 
 .explore-button:hover {
   transition: all 0.3s ease-in-out;
@@ -146,7 +142,38 @@
   font-size: 1.5rem;
   color: #456471;
 }
-
+.image1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 15em;
+  width: 15em;
+  margin-top: 2em;
+  margin-left: 2em;
+  background-image: url(../../assets/tools.png);
+}
+.image2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 15em;
+  width: 15em;
+  margin-top: 2em;
+  margin-left: 2em;
+  background-image: url(../../assets/lawn-mower.png);
+  background-size: cover;
+}
+.image3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 15em;
+  width: 15em;
+  margin-top: 2em;
+  margin-left: 2em;
+  background-image: url(../../assets/calculate.png);
+  background-size: cover;
+}
 @media screen and (max-width: 1200px) {
   .about-container {
     flex-direction: column;

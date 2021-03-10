@@ -10,7 +10,7 @@ export const getOneListing = async (id) => {
   return resp.data;
 };
 
-export const postListing = async (listingData) => {
+export const createListing = async (listingData) => {
   const resp = await api.post("/listings", { listing: listingData });
   return resp.data;
 };
@@ -20,7 +20,7 @@ export const putListing = async (id, listingData) => {
   return resp.data;
 };
 
-export const destroyListing = async () => {
+export const deleteListing = async (id) => {
   const resp = await api.delete(`/listings/${id}`);
   return resp;
 };

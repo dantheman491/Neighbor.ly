@@ -52,7 +52,7 @@ const Nav = ({ user }) => {
               onClick={closeMobileMenu}
               activeStyle={activeStyle}
             >
-              Buy
+              Borrow
             </NavLink>
           </li>
 
@@ -63,7 +63,7 @@ const Nav = ({ user }) => {
               onClick={closeMobileMenu}
               activeStyle={activeStyle}
             >
-              Sell
+              Lend
             </NavLink>
           </li>
 

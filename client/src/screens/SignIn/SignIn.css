@@ -1,5 +1,7 @@
 .page-container {
   margin: 0 auto;
+  margin-top: 10em;
+  margin-bottom: 10em;
   background: #ecf0f1;
   max-width: 21.875em;
   border-radius: 4px;
@@ -9,13 +11,18 @@
 
 h3 {
   text-align: center;
-  font-weight: 200;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
   font-size: 2em;
-  margin-top: 10px;
+  margin-top: 20px;
   margin-bottom: 1em;
   color: #34495e;
 }
-
+h4 {
+  margin-right: 6em;
+  color: #275b99;
+  font-weight: 400;
+}
 .form-container1 {
   padding-top: 20px;
 }
@@ -26,7 +33,7 @@ h3 {
 #sign-in-button {
   width: 80%;
   margin-top: 0.7rem;
-  margin-left: 10%;
+  margin-left: 2%;
   margin-bottom: 25px;
   height: 40px;
   border-radius: 4px;
@@ -39,7 +46,7 @@ h3 {
 }
 
 #sign-in-button {
-  background: #456471;
+  background: #275b99;
   border: none;
   color: white;
   font-size: 18px;
@@ -49,7 +56,7 @@ h3 {
 }
 
 .label-sign {
-  margin-left: 2em;
+  margin-left: -15px;
   margin-bottom: 1em;
 }
 

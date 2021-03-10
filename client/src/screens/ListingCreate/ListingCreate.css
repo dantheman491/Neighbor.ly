@@ -1,6 +1,7 @@
 .create-container {
   margin: 0 auto;
   margin-top: 8em;
+  margin-bottom: 4em;
   background: #ecf0f1;
   max-width: 40em;
   border-radius: 4px;
@@ -9,10 +10,11 @@
 }
 h3 {
   text-align: center;
-  font-weight: 200;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
   font-size: 2em;
-  margin-top: 10px;
-  margin-bottom: 1em;
+  margin-top: 12px;
+  margin-bottom: 0.5em;
   color: #34495e;
 }
 .form-container1 {
@@ -23,6 +25,7 @@ h3 {
   display: flex;
   flex-direction: column;
   padding: 2em;
+  margin-top: -1em;
 }
 
 .create-input[type="text"],
@@ -50,18 +53,19 @@ h3 {
   border: 1px solid #f4a261;
 }
 
-#sign-in-button {
+#create-listing-button {
   background: #456471;
   border: none;
   color: white;
   font-size: 18px;
-  font-weight: 200;
+  font-weight: 400;
   cursor: pointer;
+  height: 3em;
+  border-radius: 4px;
   transition: box-shadow 0.4s ease;
 }
 .label-create {
-  margin: 0;
-  margin-bottom: 1em;
+  margin-left: -17em;
 }
 .signup {
   color: #456471;
@@ -71,8 +75,9 @@ h4 {
 }
 .background {
   height: 100vh;
-  background-image: url(https://images.pexels.com/photos/3601422/pexels-photo-3601422.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  background-image: url(https://images.pexels.com/photos/3228687/pexels-photo-3228687.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
   background-size: cover;
+  background-position-x: center;
   display: flex;
   justify-content: center;
   align-items: center;

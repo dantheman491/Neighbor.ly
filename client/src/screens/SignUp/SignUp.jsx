@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./SignUp.css";
-// import { signUp, signIn } from "../../services/user";
+import { signUp, signIn } from "../../services/users";
 import { useHistory } from "react-router-dom";
 import Layout from "../../components/shared/Layout/Layout";
 
@@ -67,9 +67,9 @@ const SignUp = (props) => {
         <div className="form-container">
           <h3>Sign Up</h3>
           <form onSubmit={onSignUp}>
-            <label className="label-sign">Username</label>
+            <label className="label-sign1">Username</label>
             <input
-              className="sign-in-input"
+              className="label-sign1-input"
               required
               type="text"
               name="username"
@@ -78,19 +78,19 @@ const SignUp = (props) => {
               onChange={handleChange}
               autoFocus
             />
-            <label className="label-sign">Email address</label>
+            <label className="label-sign1">Email</label>
             <input
-              className="sign-in-input"
+              className="label-sign1-input"
               required
               type="email"
               name="email"
               value={email}
-              placeholder="Enter email"
+              placeholder="Enter Email"
               onChange={handleChange}
             />
-            <label className="label-sign">Password</label>
+            <label className="label-sign1">Password</label>
             <input
-              className="sign-in-input"
+              className="label-sign1-input"
               required
               name="password"
               value={password}
@@ -98,9 +98,9 @@ const SignUp = (props) => {
               placeholder="Password"
               onChange={handleChange}
             />
-            <label className="label-sign">Password Confirmation</label>
+            <label className="label-sign1">Password Confirmation</label>
             <input
-              className="sign-in-input"
+              className="label-sign1-input"
               required
               name="passwordConfirmation"
               value={passwordConfirmation}

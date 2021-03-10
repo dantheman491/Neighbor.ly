@@ -38,20 +38,20 @@ const ListingCreate = (props) => {
     <Layout user={props.user}>
       <div className="background">
         <div className="create-container">
-          <h3>Create A Listing</h3>
+          <h3>Lend A Tool</h3>
           <form onSubmit={handleSubmit} className="create-form">
-            <label className="label-create">Name of Property</label>
+            <label className="label-create">Name of Tool</label>
             <input
               className="create-input"
               required
               type="text"
               name="name"
               value={name}
-              placeholder="Enter Name of Property"
+              placeholder="Enter Name of Tool"
               onChange={handleChange}
               autoFocus
             />
-            <label className="label-create">Price</label>
+            <label className="label-create">Price to Rent</label>
             <input
               className="create-input"
               required
@@ -70,7 +70,7 @@ const ListingCreate = (props) => {
               name="description"
               value={description}
               type="text"
-              placeholder="Description"
+              placeholder="Add a Description"
               onChange={handleChange}
             />
             <label className="label-create">Image Link</label>
@@ -83,7 +83,7 @@ const ListingCreate = (props) => {
               placeholder="Image URL"
               onChange={handleChange}
             />
-            <button id="sign-in-button" type="submit">
+            <button id="create-listing-button" type="submit">
               Create Listing
             </button>
           </form>

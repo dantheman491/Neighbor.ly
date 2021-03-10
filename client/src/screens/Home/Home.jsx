@@ -29,12 +29,14 @@ const Home = (props) => {
       <div className="explore-container">
         <div className="explore-info"></div>
         <div className="explore-info-container">
+          <div className="image1"></div>
           <h3 className="one-h3">Make Money</h3>
           <p className="paragraph">
             More uses for your unused tools, strengthen your community.
           </p>
         </div>
         <div className="explore-info-container1">
+          <div className="image2"></div>
           <h3 className="one-h3">Create Revenue</h3>
           <p className="paragraph">
             Neighbor.ly provides an opportunity to make moeny with little
@@ -42,6 +44,7 @@ const Home = (props) => {
           </p>
         </div>
         <div className="explore-info-container">
+          <div className="image3"></div>
           <h3 className="one-h3">Save Money</h3>
           <p className="paragraph">
             Why buy a tool you will only use a few times? Use Neighbor.ly
