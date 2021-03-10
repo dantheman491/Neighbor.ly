@@ -100,7 +100,7 @@ const ListingEdit = (props) => {
             required
             onChange={handleChange}
           />
-          <textarea
+          <input
             className="textarea-description"
             rows="10"
             cols="78"
@@ -109,7 +109,8 @@ const ListingEdit = (props) => {
             name="description"
             required
             onChange={handleChange}
-          ></textarea>
+          />
+          {/* // ></textarea> */}
           <button type="submit" className="save-button">
             Save
           </button>

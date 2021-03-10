@@ -11,7 +11,7 @@ Review.destroy_all
 User.destroy_all
 
 @dan = User.create!(username: "dan", email: "dan@gmail.com", password: "1234567")
-
+@bob = User.create!(username: "bob", email: "bob@bob.com", password: "7654321")
 puts "#{User.count} users created"
 
 listing1 = Listing.create!(img_url: 'https://images.pexels.com/photos/4491852/pexels-photo-4491852.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500', item_title: 'circular saw', user: @dan)
@@ -21,5 +21,8 @@ listing3 = Listing.create!(item_title: 'drill', description:'very good tool',pri
 puts "#{Listing.count} listing created"
 
 review1 = Review.create!(content: 'this item is in great condition, thanks neighbor', user: @dan, listing_id: listing1)
+review1 = Review.create!(content: 'best neighbor ever, even helped teach me how to use the tool', user: @bob, listing_id: listing1)
+review1 = Review.create!(content: 'this item is in great condition, thanks neighbor', user: @bob, listing_id: listing2)
+review1 = Review.create!(content: 'this item is in great condition, thanks neighbor', user: @bob, listing_id: listing3)
 
 puts "#{Review.count} review created"
