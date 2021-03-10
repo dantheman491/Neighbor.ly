@@ -7,9 +7,9 @@ import { getAllListings, updateListing } from "../../services/listings";
 const ListingEdit = (props) => {
   const [listing, setListing] = useState({
     name: "",
-    description: "",
     imgURL: "",
     price: "",
+    description: " ",
   });
 
   const [isUpdated, setUpdated] = useState(false);
@@ -46,16 +46,16 @@ const ListingEdit = (props) => {
         <div className="edit-image-container">
           <img
             className="edit-listing-image"
-            src={listing.imgURL}
-            alt={listing.name}
+            src={listing.img_url}
+            alt={listing.item_title}
           />
         </div>
         <form className="edit-form" onSubmit={handleSubmit}>
           <input
             className="input-name"
             placeholder="Name"
-            value={listing.name}
-            name="name"
+            value={listing.item_title}
+            name="item_title"
             required
             autoFocus
             onChange={handleChange}
@@ -71,8 +71,8 @@ const ListingEdit = (props) => {
           <input
             className="input-image-link"
             placeholder="Image Link"
-            value={listing.imgURL}
-            name="imgURL"
+            value={listing.img_url}
+            name="img_url"
             required
             onChange={handleChange}
           />

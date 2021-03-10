@@ -1,0 +1,17 @@
+.review-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  background-color: #f9f9f9;
+  width: 100vw;
+  height: 30em;
+  margin-bottom: 2em;
+}
+.review {
+  border: 2px solid #437daa;
+  background-color: white;
+  border-radius: 4px;
+  height: 20em;
+  width: 20em;
+}

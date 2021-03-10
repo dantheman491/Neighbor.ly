@@ -3,7 +3,7 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  height: 100vh;
+  height: 80vh;
   padding: 10em 10em 8em;
   margin: 0 auto;
 }
@@ -40,6 +40,7 @@
 .detail-label {
   font-weight: bold;
   color: rgb(77, 77, 77);
+  margin-left: 6em;
 }
 
 .detail-title {
@@ -81,7 +82,7 @@
   border: 0;
   border-radius: 4px;
   width: 100%;
-  background: #f4a261;
+  background: #437daa;
   border: 1px solid transparent;
   text-transform: inherit;
   color: #fff;
@@ -92,8 +93,8 @@
 
 .buy-button:hover {
   background: #fff;
-  color: #e76f51;
-  border: 1px solid #e76f51;
+  color: #19b296;
+  border: 1px solid #19b296;
   text-transform: none;
   transition: all 0.3s ease-in-out;
 }
@@ -102,16 +103,17 @@
   display: flex;
   justify-content: space-between;
   margin-top: 2em;
+  margin-left: 7em;
 }
 
 .delete-button {
-  color: #456471;
+  color: #19b296;
   background-color: white;
   text-align: center;
   padding: 1rem;
   margin: 2rem auto;
   border: 0;
-  border: 2px solid #456471;
+  border: 2px solid #19b296;
   border-radius: 4px;
   width: 45%;
   text-decoration: none;
@@ -122,7 +124,7 @@
 
 .delete-button:hover {
   color: #fff;
-  background: #456471;
+  background: #19b296;
   border: 2px solid transparent;
   transition: all 0.3s ease-in-out;
 }
@@ -134,7 +136,7 @@
   border: 0;
   border-radius: 4px;
   width: 45%;
-  background: #456471;
+  background: #19b296;
   border: 2px solid transparent;
   text-decoration: none;
   color: #fff;

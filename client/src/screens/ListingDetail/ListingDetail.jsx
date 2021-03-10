@@ -7,6 +7,7 @@ import {
 } from "../../services/listings";
 import "./ListingDetail.css";
 import { useParams, Redirect, useHistory } from "react-router-dom";
+import Review from "../../components/Review/Review";
 
 const ListingDetail = ({ user }) => {
   // const [allListings, setAllListings] = useState([]);
@@ -105,6 +106,7 @@ const ListingDetail = ({ user }) => {
           )}
         </div>
       </section>
+      <Review />
 
       {/* <Recommended allListings={allListings} /> */}
     </Layout>

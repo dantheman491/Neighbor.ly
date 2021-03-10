@@ -70,6 +70,7 @@ const Listings = (props) => {
               name={listing.item_title}
               imgURL={listing.img_url}
               price={listing.price}
+              description={listing.description}
               key={index}
             />
           ))}
