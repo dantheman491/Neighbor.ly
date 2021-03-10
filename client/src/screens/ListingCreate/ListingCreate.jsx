@@ -71,7 +71,7 @@ const ListingCreate = (props) => {
               type="text"
               placeholder="Add a Description"
               onChange={handleChange}
-            />
+            ></textarea>
             <label className="label-create">Image Link</label>
             <input
               className="create-input"

@@ -16,6 +16,7 @@ puts "#{User.count} users created"
 
 listing1 = Listing.create!(img_url: 'https://images.pexels.com/photos/4491852/pexels-photo-4491852.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500', item_title: 'circular saw', user: @dan)
 listing2 = Listing.create!(item_title: 'ladder', user: @dan)
+listing3 = Listing.create!(item_title: 'drill', description:'very good tool',price: '20', img_url: 'https://images.pexels.com/photos/4491852/pexels-photo-4491852.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500', user: @dan)
 
 puts "#{Listing.count} listing created"
 

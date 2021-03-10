@@ -9,11 +9,20 @@ const ListingEdit = (props) => {
     name: "",
     imgURL: "",
     price: "",
-    description: " ",
+    description: "",
+  });
+
+  const [formData, setFormData] = useState({
+    item_title: "",
+    img_url: "",
+    price: "",
+    description: "",
   });
 
   const [isUpdated, setUpdated] = useState(false);
   let { id } = useParams();
+  const { item_title, img_url, price, description } = formData;
+
   useEffect(() => {
     const fetchListing = async () => {
       const listing = await getAllListings(id);
@@ -21,6 +30,21 @@ const ListingEdit = (props) => {
     };
     fetchListing();
   }, [id]);
+
+  useEffect(() => {
+    const prefillFormData = () => {
+      const listingItem = listing.find((listing) => listing.id === Number(id));
+      setFormData({
+        item_title: listingItem.item_title,
+        img_url: listingItem.img_url,
+        price: listingItem.price,
+        description: listingItem.description,
+      });
+    };
+    if (listing.length) {
+      prefillFormData();
+    }
+  }, [listing, id]);
 
   const handleChange = (event) => {
     const { name, value } = event.target;
@@ -47,14 +71,14 @@ const ListingEdit = (props) => {
           <img
             className="edit-listing-image"
             src={listing.img_url}
-            alt={listing.item_title}
+            alt={item_title}
           />
         </div>
         <form className="edit-form" onSubmit={handleSubmit}>
           <input
             className="input-name"
             placeholder="Name"
-            value={listing.item_title}
+            value={item_title}
             name="item_title"
             required
             autoFocus
@@ -63,7 +87,7 @@ const ListingEdit = (props) => {
           <input
             className="input-price"
             placeholder="Price"
-            value={listing.price}
+            value={price}
             name="price"
             required
             onChange={handleChange}
@@ -71,21 +95,21 @@ const ListingEdit = (props) => {
           <input
             className="input-image-link"
             placeholder="Image Link"
-            value={listing.img_url}
+            value={img_url}
             name="img_url"
             required
             onChange={handleChange}
           />
           <textarea
             className="textarea-description"
-            rows={10}
-            cols={78}
+            rows="10"
+            cols="78"
             placeholder="Description"
-            value={listing.description}
+            value={description}
             name="description"
             required
             onChange={handleChange}
-          />
+          ></textarea>
           <button type="submit" className="save-button">
             Save
           </button>

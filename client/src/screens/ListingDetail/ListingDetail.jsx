@@ -107,8 +107,6 @@ const ListingDetail = ({ user }) => {
         </div>
       </section>
       <Review />
-
-      {/* <Recommended allListings={allListings} /> */}
     </Layout>
   );
 };
