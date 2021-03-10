@@ -6,7 +6,7 @@ const Review = () => {
     <div className="review-container">
       <div className="review">
         <h3>username</h3>
-        <p>comment</p>
+        <p key={Review.comment}>comment</p>
       </div>
       <div className="review">
         <h3>username</h3>
