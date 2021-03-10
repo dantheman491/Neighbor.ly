@@ -12,7 +12,6 @@ import Review from "../../components/Review/Review";
 const ListingDetail = ({ user }) => {
   // const [allListings, setAllListings] = useState([]);
   const [listing, setListing] = useState([]);
-  console.log(listing);
   const [isUpdated, setIsUpdated] = useState(false);
   const params = useParams();
   const { id } = params;
@@ -25,6 +24,7 @@ const ListingDetail = ({ user }) => {
     };
     fetchListing();
   }, [id]);
+  console.log(listing);
 
   // useEffect(() => {
   //   const fetchListings = async () => {
