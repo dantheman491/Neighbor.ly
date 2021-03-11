@@ -17,7 +17,13 @@
   justify-content: center;
   font-family: "Roboto", sans-serif;
 }
-
+/* .three-logos {
+  background-color: bisque;
+}
+.first-one {
+  background-color: blueviolet;
+  background-image: url("../../assets/Githublogo.png");
+} */
 .footer-text {
   display: flex;
   justify-content: space-between;

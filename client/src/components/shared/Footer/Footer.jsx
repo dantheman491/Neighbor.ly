@@ -8,6 +8,17 @@ const Footer = () => {
       <Link to="/">
         <h1 className="footer-h1">Neighbor.ly</h1>
       </Link>
+      {/* <div className="three-logos">
+        <div className="first-one">
+          <a href="https://github.com/dantheman491/Neighbor.ly">logo1</a>
+        </div>
+        <div className="second-one">
+          <a href="https://github.com/dantheman491/Neighbor.ly">logo1</a>
+        </div>
+        <div className="third-one">
+          <a href="https://github.com/dantheman491/Neighbor.ly">logo1</a>
+        </div>
+      </div> */}
       <div className="footer-text">
         <h4 className="footer-h4">Daniel Ramirez 2021</h4>
         <div>
