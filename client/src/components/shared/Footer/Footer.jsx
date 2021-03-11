@@ -12,16 +12,19 @@ const Footer = () => {
       </Link>
       <div className="three-logos">
         <div className="first-one">
-          <img src={Githublogo} />
-          <a href="https://github.com/dantheman491/Neighbor.ly"></a>
+          <a href="https://github.com/dantheman491/Neighbor.ly">
+            <img src={Githublogo} />
+          </a>
         </div>
         <div className="second-one">
-          <a href="https://www.linkedin.com/in/danielatilio/"></a>
-          <img src={Linkedinlogo} />
+          <a href="https://www.linkedin.com/in/danielatilio/">
+            <img src={Linkedinlogo} />
+          </a>
         </div>
         <div className="third-one">
-          <a href="https://www.danielramirez.design/"></a>
-          <img src={drlogo} />
+          <a href="https://www.danielramirez.design/">
+            <img src={drlogo} />
+          </a>
         </div>
       </div>
       <div className="footer-text">
