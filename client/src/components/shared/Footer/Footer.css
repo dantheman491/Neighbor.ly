@@ -17,13 +17,22 @@
   justify-content: center;
   font-family: "Roboto", sans-serif;
 }
-/* .three-logos {
-  background-color: bisque;
+.three-logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-left: 1em;
 }
 .first-one {
-  background-color: blueviolet;
-  background-image: url("../../assets/Githublogo.png");
-} */
+  margin-left: 1em;
+}
+.second-one {
+  margin-left: 1em;
+}
+.third-one {
+  margin-left: 1em;
+}
 .footer-text {
   display: flex;
   justify-content: space-between;
