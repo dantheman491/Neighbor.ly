@@ -34,9 +34,7 @@ const Footer = () => {
             className="footer-a"
             href="https://github.com/dantheman491"
             target="blank"
-          >
-            {/* <i className="fab fa-github"></i> &nbsp; Daniel Ramirez */}
-          </a>
+          ></a>
         </div>
       </div>
     </div>
