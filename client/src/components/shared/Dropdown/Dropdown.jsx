@@ -10,11 +10,11 @@ const Dropdown = ({ user }) => {
       <li>
         <div className="user-info">Logged in as: {user && user.username}</div>
       </li>
-      <li className="dropdown-hover">
+      {/* <li className="dropdown-hover">
         <NavLink to={`/listings/user-listings`} className="dropdown-link">
           Manage Listings
         </NavLink>
-      </li>
+      </li> */}
       <li className="dropdown-hover">
         <NavLink to="/sign-out" className="dropdown-link">
           Sign Out
