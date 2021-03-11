@@ -43,7 +43,9 @@ const Nav = ({ user }) => {
         <div className="menu-icon" onClick={handleIsClicked}>
           <i className={isClicked ? "fas fa-times" : "fas fa-bars"} />
         </div>
-
+        <div className="logo-out">
+          <div className="logo"></div>
+        </div>
         <ul className={isClicked ? "nav-menu active" : "nav-menu"}>
           <li className="nav-item nav-hover">
             <NavLink

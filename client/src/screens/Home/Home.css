@@ -26,7 +26,6 @@
   width: 50em;
   height: 20em;
   background-color: #0c185f;
-
   margin-top: 5em;
   margin-left: 20em;
   margin-right: 2em;
@@ -39,9 +38,9 @@
   color: #ffff;
   margin-left: 5em;
 }
-.about-info {
+/* .about-info {
   margin-left: 15em;
-}
+} */
 
 /* .about-container p {
   font-size: 1.4rem;
@@ -74,7 +73,7 @@
   width: 20em;
   margin-left: 10em;
   margin-right: 10em;
-  border: 2px solid gray;
+  /* border: 2px solid gray; */
   border-radius: 4px;
 }
 .explore-info-container1 {
@@ -82,7 +81,7 @@
   width: 20em;
   margin-left: 10em;
   margin-right: 5em;
-  border: 2px solid gray;
+  /* border: 2px solid gray; */
   border-radius: 4px;
   background-size: cover;
 }
@@ -90,14 +89,15 @@
 .one-h3 {
   color: #112e51;
   margin-top: 1em;
+  font-weight: 500;
 }
 
 .explore-container p {
   color: black;
   font-family: "Noto Sans JP", sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   max-width: 15em;
-  padding-left: 2em;
+  padding-left: 1.3em;
 }
 
 .explore-button:hover {
@@ -120,33 +120,37 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 15em;
-  width: 15em;
+  height: 18em;
+  width: 18em;
   margin-top: 2em;
-  margin-left: 2em;
+  margin-left: 1em;
   background-image: url(../../assets/tools.png);
+  background-size: cover;
+  border-radius: 4px;
 }
 .image2 {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 15em;
-  width: 15em;
+  height: 18em;
+  width: 18em;
   margin-top: 2em;
-  margin-left: 2em;
+  margin-left: 1em;
   background-image: url(../../assets/lawn-mower.png);
   background-size: cover;
+  border-radius: 4px;
 }
 .image3 {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 15em;
-  width: 15em;
+  height: 18em;
+  width: 18em;
   margin-top: 2em;
-  margin-left: 2em;
+  margin-left: 1em;
   background-image: url(../../assets/calculate.png);
   background-size: cover;
+  border-radius: 4px;
 }
 @media screen and (max-width: 1200px) {
   .about-container {

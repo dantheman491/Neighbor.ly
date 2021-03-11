@@ -39,7 +39,24 @@
   width: 60vw;
   justify-content: start;
 }
+.logo {
+  height: 1em;
+  width: 1em;
+  background-image: url(https://static.thenounproject.com/png/1387491-200.png);
+  background-size: cover;
 
+  filter: invert(100%);
+}
+.logo-out {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 1.5em;
+  width: 1.5em;
+  border: 3px solid white;
+  border-radius: 26px;
+  margin-left: -2.5em;
+}
 .nav-menu a {
   font-family: "Roboto", sans-serif;
 }
