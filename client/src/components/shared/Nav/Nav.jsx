@@ -4,8 +4,8 @@ import Dropdown from "../Dropdown/Dropdown";
 import "./Nav.css";
 
 const activeStyle = {
-  fontWeight: "800",
-  color: "#f4a261",
+  fontWeight: "900",
+  // color: "#19b296",
 };
 
 const Nav = ({ user }) => {
