@@ -116,17 +116,16 @@ const ListingEdit = (props) => {
             required
             onChange={handleChange}
           />
-          <input
+          <textarea
             className="textarea-description"
-            rows="10"
-            cols="78"
+            rows="5"
+            cols="50"
             placeholder="Description"
             value={description}
             name="description"
             required
             onChange={handleChange}
-          />
-          {/* // ></textarea> */}
+          ></textarea>
           <button type="submit" className="save-button">
             Save
           </button>

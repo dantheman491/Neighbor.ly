@@ -84,14 +84,16 @@ const ListingDetail = ({ user }) => {
         </div>
         <div className="listing-details-container">
           <h2 className="detail-title">{listing.item_title}</h2>
-          <h5>{listing.price}</h5>
+          <h5 className="price-detail">Price: &nbsp;{listing.price}</h5>
           <button className="buy-button" onClick={() => history.push("/buy")}>
             Borrow Now
           </button>
           <div className="details-container">
-            <p className="detail-label">Details</p>
             <hr className="linebreak"></hr>
-            <p className="detail-description">{listing.description}</p>
+            <div className="detail-block">
+              <p className="detail-label">Details</p>
+              <p className="detail-description">{listing.description}</p>
+            </div>
           </div>
           {user && user.id === listing.user_id ? (
             <div className="edit-buttons">

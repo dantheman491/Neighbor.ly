@@ -41,10 +41,6 @@ h4 {
   padding-left: 0.5em;
 }
 
-:focus {
-  border: 1px solid #f4a261;
-}
-
 #sign-in-button {
   background: #275b99;
   border: none;

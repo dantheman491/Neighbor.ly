@@ -5,7 +5,6 @@ import "./Nav.css";
 
 const activeStyle = {
   fontWeight: "900",
-  // color: "#19b296",
 };
 
 const Nav = ({ user }) => {

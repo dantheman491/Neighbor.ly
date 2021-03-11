@@ -12,6 +12,7 @@ const Footer = () => {
         <div className="first-one">
           <a href="https://github.com/dantheman491/Neighbor.ly">logo1</a>
         </div>
+        <img src={require("../../assets/Githublogo.png")} />
         <div className="second-one">
           <a href="https://github.com/dantheman491/Neighbor.ly">logo1</a>
         </div>

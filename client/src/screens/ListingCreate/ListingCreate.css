@@ -49,12 +49,9 @@ h3 {
   font-family: "Roboto", sans-serif;
   font-size: 15px;
 }
-:focus {
-  border: 1px solid #f4a261;
-}
 
 #create-listing-button {
-  background: #456471;
+  background: #275b99;
   border: none;
   color: white;
   font-size: 18px;
