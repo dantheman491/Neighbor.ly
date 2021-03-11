@@ -86,26 +86,12 @@
   border-radius: 4px;
   background-size: cover;
 }
-/* .explore-info-container2 {
-  height: 30em;
-  width: 20em;
-  border: 2px solid gray;
-  border-radius: 4px;
-  background-image: url(../../assets/tools.png);
-  background-size: cover;
-} */
+
 .one-h3 {
   color: #112e51;
   margin-top: 1em;
 }
-/* .paragraph p {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: "Noto Sans JP", sans-serif;
-  font-size: 16px;
-  max-width: 12em;
-} */
+
 .explore-container p {
   color: black;
   font-family: "Noto Sans JP", sans-serif;
@@ -113,18 +99,6 @@
   max-width: 15em;
   padding-left: 2em;
 }
-
-/* .explore-button {
-  margin-top: 2em;
-  padding: 0.5em 0.75em;
-  font-size: 1.4rem;
-  border: 2px solid white;
-  border-radius: 4px;
-  background-color: inherit;
-  color: white;
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
-} */
 
 .explore-button:hover {
   transition: all 0.3s ease-in-out;

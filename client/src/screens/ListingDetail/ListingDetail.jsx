@@ -8,6 +8,7 @@ import {
 import "./ListingDetail.css";
 import { useParams, Redirect, useHistory } from "react-router-dom";
 import Review from "../../components/Review/Review";
+import { getAllReviews } from "../../services/reviews";
 
 const ListingDetail = ({ user }) => {
   // const [allListings, setAllListings] = useState([]);
@@ -16,11 +17,14 @@ const ListingDetail = ({ user }) => {
   const params = useParams();
   const { id } = params;
   const history = useHistory();
+  const [reviews, setReviews] = useState([]);
 
   useEffect(() => {
     const fetchListing = async () => {
       const listing = await getOneListing(id);
+      const reviews = await getAllReviews(id);
       setListing(listing);
+      setReviews(reviews);
     };
     fetchListing();
   }, [id]);
@@ -106,7 +110,10 @@ const ListingDetail = ({ user }) => {
           )}
         </div>
       </section>
-      <Review />
+
+      {reviews?.map((review) => (
+        <Review key={review.id} review={review} />
+      ))}
     </Layout>
   );
 };

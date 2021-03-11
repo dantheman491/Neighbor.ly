@@ -1,19 +1,21 @@
 .dropdown-menu {
-  width: 8em;
+  width: 10em;
   position: absolute;
   top: 80px;
   list-style: none;
   text-align: start;
+  margin-top: -1em;
+  margin-left: -1.3em;
 }
 
 .dropdown-menu li {
-  background: #456471;
-  font-family: "Lato";
+  background: #275b99;
+  font-family: "Roboto", sans-serif;
   cursor: pointer;
 }
 
 .dropdown-hover:hover {
-  background: #f4a261;
+  background: #19b296;
 }
 
 .dropdown-menu.clicked {

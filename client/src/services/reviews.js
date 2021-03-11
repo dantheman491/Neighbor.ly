@@ -1,6 +1,6 @@
 import api from "./api-config";
-export const getAllReviews = async () => {
-  const resp = await api.get("/reviews");
+export const getAllReviews = async (listingId) => {
+  const resp = await api.get(`/listings/${listingId}/reviews`);
   return resp.data;
 };
 export const getOneReview = async (id) => {
@@ -18,7 +18,7 @@ export const putReview = async (id, reviewData) => {
   return resp.data;
 };
 
-export const destroyReview = async () => {
+export const destroyReview = async (id) => {
   const resp = await api.delete(`/reviews/${id}`);
   return resp;
 };

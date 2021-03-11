@@ -20,9 +20,9 @@ listing3 = Listing.create!(item_title: 'drill', description:'very good tool',pri
 
 puts "#{Listing.count} listing created"
 
-review1 = Review.create!(content: 'this item is in great condition, thanks neighbor', user: @dan, listing_id: listing1)
-review1 = Review.create!(content: 'best neighbor ever, even helped teach me how to use the tool', user: @bob, listing_id: listing1)
-review1 = Review.create!(content: 'this item is in great condition, thanks neighbor', user: @bob, listing_id: listing2)
-review1 = Review.create!(content: 'this item is in great condition, thanks neighbor', user: @bob, listing_id: listing3)
+review1 = Review.create!(content: 'this item is in great condition, thanks neighbor', user: @dan, listing: listing1)
+review2 = Review.create!(content: 'best neighbor ever, even helped teach me how to use the tool', user: @bob, listing: listing1)
+review3 = Review.create!(content: 'this item is in great condition, thanks neighbor', user: @bob, listing: listing2)
+review4 = Review.create!(content: 'this item is in great condition, thanks neighbor', user: @bob, listing: listing3)
 
 puts "#{Review.count} review created"

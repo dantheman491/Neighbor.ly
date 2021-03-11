@@ -11,7 +11,7 @@ class ListingsController < ApplicationController
 
   # GET /listings/1
   def show
-    render json: @listing, include: :reviews
+    render json: @listing, include: :reviews, status: :ok 
   end
 
   # POST /listings
