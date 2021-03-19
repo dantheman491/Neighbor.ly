@@ -133,16 +133,16 @@ src
 
 | Task                            | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------------------- | :------: | :------------: | :-----------: | :---------: |
-| Add Sign Up/Login Form          |    L     |    TBD hrs     |    TBD hrs    |     TBD     |
-| Create Front-End CRUD Actions   |    H     |    TBD hrs     |    TBD hrs    |     TBD     |
-| Create Back-End CRUD Actions    |    H     |    TBD hrs     |    TBD hrs    |     TBD     |
-| Create seed data                |    M     |    TBD hrs     |    TBD hrs    |     TBD     |
-| Add Front-End CSS (boilerplate) |    L     |    TBD hrs     |    TBD hrs    |     TBD     |
-| Add Front-End CSS (advanced)    |    H     |    TBD hrs     |    TBD hrs    |     TBD     |
+| Add Sign Up/Login Form          |    L     |     2 hrs      |     4 hrs     |     TBD     |
+| Create Front-End CRUD Actions   |    H     |     3 hrs      |     3 hrs     |     TBD     |
+| Create Back-End CRUD Actions    |    H     |     4 hrs      |     6 hrs     |     TBD     |
+| Create seed data                |    M     |     1 hrs      |     2 hrs     |     TBD     |
+| Add Front-End CSS (boilerplate) |    L     |     4 hrs      |     5 hrs     |     TBD     |
+| Add Front-End CSS (advanced)    |    H     |     2 hrs      |     3 hrs     |     TBD     |
 | **Post-MVP**                    |    M     |    TBD hrs     |    TBD hrs    |     TBD     |
 | QA & Test application           |    M     |    TBD hrs     |    TBD hrs    |     TBD     |
-| Deployment                      |    H     |    TBD hrs     |    TBD hrs    |     TBD     |
-| TOTAL                           |          |    TBD hrs     |    TBD hrs    |     TBD     |
+| Deployment                      |    H     |     2 hrs      |     2 hrs     |     TBD     |
+| TOTAL                           |          |    TBD hrs     |    25 hrs     |     TBD     |
 
 <br>
 
@@ -151,3 +151,18 @@ src
 <img src = "https://user-images.githubusercontent.com/22455354/110055726-7f6f5300-7d2b-11eb-910f-54b08fc3d960.jpg" width="300">
 
 ### Code Snippet:
+
+def create
+@user = User.new(user_params)
+
+      if @user.save
+        @token = encode({id: @user.id})
+        render json: {
+          user: @user.attributes.except("password_digest"),
+          token: @token
+          }, status: :created
+      else
+        render json: @user.errors, status: :unprocessable_entity
+      end
+
+end
