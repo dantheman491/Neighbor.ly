@@ -20,6 +20,7 @@ Neighbor.ly MVP is to have full CRUD capability for creating and adding listings
 2. I would like to add a price comparison table.
 3. I would like to add an option to purchase rented item.
 4. I would like to create a promoter component.
+5. I would like to revist the UX/UI portion to update styling according to modern standards. 
 
 ### Libraries and Dependencies
 
